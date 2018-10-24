@@ -1,8 +1,18 @@
+/****************/
 /* COLOUR VARS */
+/**************/
+/****************/
 /* MEDIA QUERY */
+/**************/
+/********************/
 /* PADDING MARGINS */
+/******************/
+/**************/
 /* FONT SIZE */
+/************/
+/*********/
 /* SITE */
+/*******/
 body {
   font-family: 'daxline-pro', sans-serif;
   padding: 0px;
@@ -19,9 +29,12 @@ a:hover {
   cursor: pointer; }
 
 div.body {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
+/***********/
 /* HEADER */
+/*********/
 .nav-bar {
   height: 70px;
   width: 100%;
@@ -46,7 +59,9 @@ div.body {
     background: linear-gradient(90deg, #A5CD28 0%, #69A507 100%);
     box-shadow: 0 4px 7px 0 rgba(1, 36, 6, 0.2); }
 
+/*****************/
 /* TEXT BANNERS */
+/***************/
 .text-title-box {
   text-align: center;
   text-transform: uppercase;
@@ -63,8 +78,11 @@ div.body {
     width: 120px; }
 
 .text-info-banner {
+  margin-top: 17px;
+  margin-bottom: 68px;
   text-align: center;
-  padding: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   width: 100%;
   height: 70px;
   background-color: rgba(242, 244, 242, 0.7); }
@@ -86,9 +104,14 @@ div.body {
         font-weight: bold;
         margin-left: 20px; }
 
+/**************************/
 /* LOTTO CARD COMPONENTS */
+/************************/
 .lotto-card.two-thirds {
   width: calc(66.68% - 17px*1 - 7px*3); }
+  .lotto-card.two-thirds div.lotto-numbers {
+    float: left;
+    width: calc(50% - 14px*2); }
 
 .lotto-card.kenoland {
   width: calc(33.33% - 17px - (7px));
@@ -145,7 +168,8 @@ div.body {
     position: relative;
     width: 100%;
     height: 154px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    background-size: 100%; }
     .lotto-card div.img div.head-text {
       margin: 0px;
       padding: 14px; }
@@ -170,10 +194,12 @@ div.body {
       background-color: rgba(0, 0, 0, 0.4);
       box-shadow: 2px 2px 7px 0 rgba(1, 36, 6, 0.28); }
     .lotto-card div.img div.inner-text {
+      position: relative;
+      top: 7px;
       height: 100%;
-      font-size: 12px;
-      line-height: 18px;
-      display: inline-block; }
+      font-size: 14px;
+      display: inline-block;
+      line-height: 20px; }
       .lotto-card div.img div.inner-text .title {
         font-weight: 900;
         text-transform: uppercase; }
@@ -187,7 +213,7 @@ div.body {
       font-size: 21px; }
   .lotto-card div.lotto-numbers {
     float: left;
-    width: calc(50% - 14px*2);
+    width: 100%;
     padding: 14px; }
     .lotto-card div.lotto-numbers p.title {
       margin: 0px;
@@ -195,30 +221,59 @@ div.body {
     .lotto-card div.lotto-numbers div.number-circle {
       float: left;
       margin-right: 7px;
+      margin-bottom: 7px;
       border: 1px solid #D9DEDA;
       border-radius: 50%;
       height: 35px;
       width: 35px;
-      line-height: 35px;
+      line-height: 37px;
       text-align: center; }
     .lotto-card div.lotto-numbers div.number-circle.red {
       border: 1px solid #C53422; }
   .lotto-card div.card-links {
     position: relative;
     clear: both;
-    padding-top: 14px;
+    padding-top: 7px;
     text-align: right;
     width: 100%;
-    color: #666;
-    font-size: 14px;
-    font-weight: bold; }
+    color: #aaa;
+    font-size: 22px;
+    margin-bottom: 7px; }
     .lotto-card div.card-links a {
       color: #69A507;
+      font-size: 14px;
+      font-weight: bold;
       margin: 0 14px 0 14px; }
 
 .mon-wed-lotto .img {
-  background: url("/static/images/mwlottobk.png") no-repeat center top;
-  background-size: 100%; }
+  background: url("/static/images/mwlottobk.png") no-repeat center top; }
+
+.powerball .img {
+  background: url("/static/images/powerball.png") no-repeat center top; }
+
+.powerball div.borderLeft {
+  background-color: #3074AF; }
+
+.powerball div.lotto-numbers div.number-circle.red {
+  border: 1px solid #3074AF; }
+
+.tattslotto .img {
+  background: url("/static/images/tattslotto.png") no-repeat center top; }
+
+.tattslotto div.borderLeft {
+  background-color: #C53422; }
+
+.tattslotto div.lotto-numbers div.number-circle.red {
+  border: 1px solid #C53422; }
+
+.ozlotto .img {
+  background: url("/static/images/ozlotto.png") no-repeat center top; }
+
+.ozlotto div.borderLeft {
+  background-color: #479E3D; }
+
+.ozlotto div.lotto-numbers div.number-circle.red {
+  border: 1px solid #479E3D; }
 
 @font-face {
   font-family: "ll-icon-font";

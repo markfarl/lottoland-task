@@ -1,15 +1,24 @@
+/****************/
 /* COLOUR VARS */
+/**************/
 $green-bk: #69A507;
 $white: #FFFFFF;
 $black: #000000;
 $dark-green: #536519;
+$blue: #3074AF;
+$red: #C53422;
+$green: #479E3D;
 
+/****************/
 /* MEDIA QUERY */
+/**************/
 $break-small: 320px;
 $break-med: 768px;
 $break-large: 1024px;
 
+/********************/
 /* PADDING MARGINS */
+/******************/
 $c-small: 33.33%;
 $c-large: 66.68%;
 $l-margin: 17px;
@@ -17,12 +26,15 @@ $l-halfwidth: 50%;
 $l-pad: 7px;
 $l-doublepad:  14px;
 
+/**************/
 /* FONT SIZE */
+/************/
 $title-size: 28px;
 $text-size: 14px;
 
-
+/*********/
 /* SITE */
+/*******/
 body{
 	font-family: 'daxline-pro', sans-serif;
 	padding:0px;
@@ -40,10 +52,12 @@ a:hover{
 }
 div.body{
 	position:relative;
+	overflow: hidden;
 }
 
-
+/***********/
 /* HEADER */
+/*********/
 .nav-bar {	
 	height: 70px;	
 	width: 100%;	
@@ -71,7 +85,9 @@ div.body{
 	}
 }
 
+/*****************/
 /* TEXT BANNERS */
+/***************/
 .text-title-box{
 	text-align:center;
 	text-transform: uppercase;
@@ -91,8 +107,11 @@ div.body{
 	}
 }
 .text-info-banner{
+	margin-top: $l-margin;
+	margin-bottom: $l-margin*4;
 	text-align:center;
-	padding:$l-pad;
+	padding-top:$l-pad;
+	padding-bottom:$l-pad;
 	width: 100%;
 	height:70px;
 	background-color: rgba(242,244,242,0.7);
@@ -120,9 +139,15 @@ div.body{
 	}
 }
 
+/**************************/
 /* LOTTO CARD COMPONENTS */
+/************************/
 .lotto-card.two-thirds{
 	width: calc(#{$c-large} - #{$l-margin}*1 - #{$l-pad}*3);
+	div.lotto-numbers{
+		float: left;
+		width: calc(#{$l-halfwidth} - #{$l-doublepad}*2);
+	}
 }
 .lotto-card.kenoland{
 	width: calc(#{$c-small} - #{$l-margin} - (#{$l-pad});
@@ -189,6 +214,7 @@ div.body{
 		width:100%;
 		height:154px;
 		color:$white;
+		background-size: 100%;
 		div.head-text{
 			margin:0px;
 			padding: $l-doublepad;
@@ -219,11 +245,14 @@ div.body{
 
 		}
 		div.inner-text{
+			position:relative;
+			top:$l-pad;
 			height:100%;
-			font-size: 12px;
-			line-height: 18px;
+			font-size: 14px;			
 			display:inline-block;
+			line-height: 20px;
 			.title{
+				
 				font-weight:900;
 				text-transform: uppercase;
 			}
@@ -242,8 +271,7 @@ div.body{
 	}
 	div.lotto-numbers{
 		float: left;
-		//width: -webkit-calc(#{$l-halfwidth} - #{$l-doublepad}*2);
-		width: calc(#{$l-halfwidth} - #{$l-doublepad}*2);
+		width: 100%;
 		padding: $l-doublepad;
 		p.title{
 			margin:0px;
@@ -252,11 +280,12 @@ div.body{
 		div.number-circle{
 			float:left;
 			margin-right:$l-pad;
+			margin-bottom:$l-pad;
 			border: 1px solid #D9DEDA;
 			border-radius:50%;
 			height:35px;
 			width:35px;
-			line-height:35px;
+			line-height:37px;
 			text-align: center;
 		}
 		div.number-circle.red{
@@ -267,14 +296,16 @@ div.body{
 	div.card-links{
 		position:relative;		
 		clear:both;
-		padding-top:$l-doublepad;
+		padding-top:$l-pad;
 		text-align:right;
 		width:100%;
-		color:#666;
-		font-size: 14px;
-		font-weight: bold;
+		color:#aaa;
+		font-size: 22px;
+		margin-bottom:$l-pad;
 		a{
 			color: $green-bk;
+			font-size: 14px;
+			font-weight: bold;
 			margin:0 $l-doublepad 0 $l-doublepad;
 		}
 	}
@@ -290,7 +321,48 @@ div.body{
 
 }
 
-.mon-wed-lotto .img{
-	background: url('/static/images/mwlottobk.png') no-repeat center top;
- 	background-size: 100%;
+.mon-wed-lotto{
+	.img{
+		background: url('/static/images/mwlottobk.png') no-repeat center top;
+	}
+}
+
+.powerball{
+	.img{
+		background: url('/static/images/powerball.png') no-repeat center top;
+ 	}
+ 	div.borderLeft{
+		background-color: $blue;
+	}
+	div.lotto-numbers{
+		div.number-circle.red{
+			border: 1px solid $blue;
+		}
+	}
+}
+.tattslotto{
+	.img{
+		background: url('/static/images/tattslotto.png') no-repeat center top;	 	
+ 	}
+ 	div.borderLeft{
+		background-color: $red;
+	}
+	div.lotto-numbers{
+		div.number-circle.red{
+			border: 1px solid $red;
+		}
+	}
+}
+.ozlotto{
+	.img{
+		background: url('/static/images/ozlotto.png') no-repeat center top;	 	
+ 	}
+ 	div.borderLeft{
+		background-color: $green;
+	}
+	div.lotto-numbers{
+		div.number-circle.red{
+			border: 1px solid $green;
+		}
+	}
 }

@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import $ from 'jquery';
+import moment from 'moment';
 import Layout from '../components/Layout'
 import MonWedLotto from '../components/MonWedLotto'
+import Powerball from '../components/Powerball'
+import Tattslotto from '../components/Tattslotto'
+import OzLotto from '../components/OzLotto'
 import '../scss/index.scss'
 import '../scss/icon.scss'
 import '../scss/daxline-pro.scss'
@@ -22,7 +26,10 @@ class Home extends Component{
 
 	    this.state = {
 	      monWedOz: dataStructure,
-	      ozPowerBall: dataStructure
+	      ozPowerBall: dataStructure,
+	      saturdayOz: dataStructure,
+	      ozLotto: dataStructure,
+	      powerBall: dataStructure
 	    };
   }
 
@@ -31,10 +38,8 @@ class Home extends Component{
 	}
 
 	niceDate(date){
-		console.log(date)
-		let options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' }
 		let d = new Date(date.year+'-'+date.month+'='+date.day)
-		return d.toLocaleDateString("en-US",options)
+		return moment(d).format('ddd, DD MMM YYYY')
 	}
   getDrawingApi(){
     $.when($.ajax({
@@ -49,8 +54,22 @@ class Home extends Component{
 		      	numbers: result.monWedOz.last.numbers,
 		      	supplementary: result.monWedOz.last.supplementary,
 		      	drawingDate: this.niceDate(result.monWedOz.last.date)
-		      } ,
-          ozPowerBall: result.ozPowerBall
+		      },
+          ozPowerBall: {
+		      	numbers: result.ozPowerBall.last.numbers,
+		      	supplementary: result.ozPowerBall.last.powerBall,
+		      	drawingDate: this.niceDate(result.ozPowerBall.last.date)
+		      },
+          saturdayOz: {
+		      	numbers: result.saturdayOz.last.numbers,
+		      	supplementary: result.saturdayOz.last.supplementary,
+		      	drawingDate: this.niceDate(result.saturdayOz.last.date)
+		      },
+          ozLotto: {
+		      	numbers: result.ozLotto.last.numbers,
+		      	supplementary: result.ozLotto.last.bonus,
+		      	drawingDate: this.niceDate(result.ozLotto.last.date)
+		      }
         });
       });
   	}
@@ -59,13 +78,13 @@ class Home extends Component{
 		return (
 			<div>
 				<Layout>
-
 					<div className="text-title-box">
 						<h1><span className="black">Check out</span> latest lotto results</h1>
 						<img src="/static/images/smile.png" />
 					</div>
 
 					<MonWedLotto data={this.state.monWedOz} />
+					
 
 					<div className="lotto-card kenoland">
 						<div className="img header">
@@ -79,19 +98,22 @@ class Home extends Component{
 							</div>
 						</div>
 						<div className="body">
-							<span>Next availble draw: <div className="icon icon-clock-2 selection-left"></div> 03:47</span>
+							<p>Next availble draw: <i className="icon icon-clock-2 selection-left"></i> 03:47</p>
 							<img src="/static/images/kenolandball.png" />
 							<div className="floatLeft"><p>$<span className="large">10</span> million</p></div>
 						</div>
 					</div>
-					<div className="lotto-card">
-					<div className="borderLeft">
-						</div>About Page2</div>
-					<div className="lotto-card">
-					<div className="borderLeft">
-						</div>About Page3</div>
+
 					<div className="clear">
 					</div>
+
+					<Powerball data={this.state.ozPowerBall} />
+					<Tattslotto data={this.state.saturdayOz} />
+					<OzLotto data={this.state.ozLotto} />
+				
+					<div className="clear">
+					</div>
+
 					<div className="text-info-banner">
 						<img src="/static/images/kenolandball.png" />
 						<div className="textbox">
@@ -101,6 +123,12 @@ class Home extends Component{
 							</p>
 						</div>
 					</div>
+
+					<div className="text-title-box">
+						<h1><span className="black">Check out</span> latest lotto results</h1>
+						<img src="/static/images/smile.png" />
+					</div>
+
 				</Layout>	
 		  	</div>
 		)
