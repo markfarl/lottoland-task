@@ -1,31 +1,154 @@
-@import url(https://fonts.googleapis.com/css?family=Maven+Pro);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css);
+/* COLOUR VARS */
+/* MEDIA QUERY */
+/* PADDING MARGINS */
+/* FONT SIZE */
+/* SITE */
 body {
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'daxline-pro', sans-serif;
   padding: 0px;
   margin: 0px; }
 
+.icon {
+  display: inline-block; }
+
+.clear {
+  clear: both; }
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer; }
+
+div.body {
+  position: relative; }
+
+/* HEADER */
 .nav-bar {
   height: 70px;
   width: 100%;
   background: linear-gradient(270deg, #F2F4F2 0%, #FFFFFF 100%);
   box-shadow: 0 1px 0 0 #D9DEDA; }
+  .nav-bar img.logo {
+    margin-top: 14px;
+    margin-left: 21px;
+    width: 128px; }
+  .nav-bar .join-button {
+    margin-top: 17px;
+    margin-right: 21px;
+    color: #FFFFFF;
+    float: right;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 31px;
+    height: 32px;
+    width: 85px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #A5CD28 0%, #69A507 100%);
+    box-shadow: 0 4px 7px 0 rgba(1, 36, 6, 0.2); }
+
+/* TEXT BANNERS */
+.text-title-box {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 17px 0 34px 0; }
+  .text-title-box h1 {
+    color: #69A507;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 30px;
+    margin-bottom: 7px; }
+    .text-title-box h1 span.black {
+      color: #000000; }
+  .text-title-box img {
+    width: 120px; }
+
+.text-info-banner {
+  text-align: center;
+  padding: 7px;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(242, 244, 242, 0.7); }
+  .text-info-banner img {
+    width: auto;
+    height: 70px;
+    margin-right: 14px; }
+  .text-info-banner div.textbox {
+    height: 70px;
+    display: inline-block;
+    vertical-align: middle; }
+    .text-info-banner div.textbox p {
+      line-height: 10px;
+      margin: 0px; }
+      .text-info-banner div.textbox p span.bold {
+        font-weight: bold; }
+      .text-info-banner div.textbox p span.green {
+        color: #69A507;
+        font-weight: bold;
+        margin-left: 20px; }
+
+/* LOTTO CARD COMPONENTS */
+.lotto-card.two-thirds {
+  width: calc(66.68% - 17px*1 - 7px*3); }
+
+.lotto-card.kenoland {
+  width: calc(33.33% - 17px - (7px));
+  margin-left: 17px;
+  border: none;
+  min-height: 302px; }
+  .lotto-card.kenoland .header {
+    background: #536519 url("/static/images/kenoland.png") no-repeat right top;
+    background-size: auto 100%;
+    height: 120px;
+    width: 100%; }
+  .lotto-card.kenoland .body {
+    text-align: center;
+    height: 180px;
+    background: linear-gradient(90deg, #F56632 0%, #C62C82 58.64%, #C52B83 100%); }
+    .lotto-card.kenoland .body p {
+      margin: 0px;
+      padding-top: 14px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #FFFFFF; }
+    .lotto-card.kenoland .body img {
+      height: 57px;
+      width: auto;
+      margin-top: 7px;
+      margin-right: 7px; }
+    .lotto-card.kenoland .body div.floatLeft {
+      height: 70px;
+      display: inline-block;
+      vertical-align: middle; }
+      .lotto-card.kenoland .body div.floatLeft p {
+        font-weight: 900;
+        line-height: 0px;
+        font-size: 20px; }
+        .lotto-card.kenoland .body div.floatLeft p span.large {
+          font-size: 40px; }
 
 .lotto-card {
-  background: #4a4;
+  position: relative;
   float: left;
-  width: -webkit-calc(33% - 17px);
-  margin-left: 17px;
+  width: calc(33.33% - 17px - (7px*2));
+  margin-left: 24px;
   margin-bottom: 17px;
-  min-height: 300px; }
+  min-height: 300px;
+  border: 1px solid #D9DEDA; }
+  .lotto-card div.borderLeft {
+    position: absolute;
+    height: 100%;
+    width: 7px;
+    background-color: #714C9C;
+    left: -7px; }
   .lotto-card div.img {
+    overflow: hidden;
     position: relative;
     width: 100%;
     height: 154px;
     color: #FFFFFF; }
     .lotto-card div.img div.head-text {
       margin: 0px;
-      padding: -webkit-calc(7px * 2); }
+      padding: 14px; }
       .lotto-card div.img div.head-text p {
         margin: 0px; }
     .lotto-card div.img p.title {
@@ -54,17 +177,575 @@ body {
       .lotto-card div.img div.inner-text .title {
         font-weight: 900;
         text-transform: uppercase; }
-    .lotto-card div.img i.selection-left {
+    .lotto-card div.img .icon.selection-left {
       height: 100%;
       margin-right: 20%;
-      font-size: 40px; }
-    .lotto-card div.img i.selection-right {
+      font-size: 21px; }
+    .lotto-card div.img .icon.selection-right {
       height: 100%;
       margin-left: 20%;
-      font-size: 40px; }
+      font-size: 21px; }
+  .lotto-card div.lotto-numbers {
+    float: left;
+    width: calc(50% - 14px*2);
+    padding: 14px; }
+    .lotto-card div.lotto-numbers p.title {
+      margin: 0px;
+      margin-bottom: 7px; }
+    .lotto-card div.lotto-numbers div.number-circle {
+      float: left;
+      margin-right: 7px;
+      border: 1px solid #D9DEDA;
+      border-radius: 50%;
+      height: 35px;
+      width: 35px;
+      line-height: 35px;
+      text-align: center; }
+    .lotto-card div.lotto-numbers div.number-circle.red {
+      border: 1px solid #C53422; }
+  .lotto-card div.card-links {
+    position: relative;
+    clear: both;
+    padding-top: 14px;
+    text-align: right;
+    width: 100%;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold; }
+    .lotto-card div.card-links a {
+      color: #69A507;
+      margin: 0 14px 0 14px; }
 
 .mon-wed-lotto .img {
-  background: url("/static/mwlottobk.png") no-repeat center; }
+  background: url("/static/images/mwlottobk.png") no-repeat center top;
+  background-size: 100%; }
+
+@font-face {
+  font-family: "ll-icon-font";
+  src: url("/static/fonts/icons/ll-icon-font.eot");
+  src: url("/static/fonts/icons/ll-icon-font.eot?#iefix") format("embedded-opentype"), url("/static/fonts/icons/ll-icon-font.woff") format("woff"), url("/static/fonts/icons/ll-icon-font.ttf") format("truetype"), url("/static/fonts/icons/ll-icon-font.svg#ll-icon-font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[data-icon]:before {
+  font-family: "ll-icon-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "ll-icon-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-bin-2:before {
+  content: "A"; }
+
+.icon-pencil-2:before {
+  content: "B"; }
+
+.icon-power-2:before {
+  content: "C"; }
+
+.icon-preview-1:before {
+  content: "D"; }
+
+.icon-play-1:before {
+  content: "G"; }
+
+.icon-pause-1:before {
+  content: "H"; }
+
+.icon-next-1:before {
+  content: "I"; }
+
+.icon-forward-1:before {
+  content: "J"; }
+
+.icon-backward-1:before {
+  content: "K"; }
+
+.icon-previous-1:before {
+  content: "L"; }
+
+.icon-record-1:before {
+  content: "M"; }
+
+.icon-stop-1:before {
+  content: "N"; }
+
+.icon-eject-1:before {
+  content: "O"; }
+
+.icon-delete-1:before {
+  content: "P"; }
+
+.icon-add-1:before {
+  content: "Q"; }
+
+.icon-check-2:before {
+  content: "R"; }
+
+.icon-check-circle-2:before {
+  content: "S"; }
+
+.icon-delete-3:before {
+  content: "T"; }
+
+.icon-add-3:before {
+  content: "U"; }
+
+.icon-minus-3:before {
+  content: "V"; }
+
+.icon-clock-2:before {
+  content: "W"; }
+
+.icon-information:before {
+  content: "X"; }
+
+.icon-question-mark:before {
+  content: "Y"; }
+
+.icon-alert-1:before {
+  content: "Z"; }
+
+.icon-dice-2:before {
+  content: "0"; }
+
+.icon-arrow-65:before {
+  content: "1"; }
+
+.icon-arrow-66:before {
+  content: "2"; }
+
+.icon-arrow-67:before {
+  content: "3"; }
+
+.icon-arrow-68:before {
+  content: "4"; }
+
+.icon-arrow-right:before {
+  content: "5"; }
+
+.icon-arrow-left:before {
+  content: "6"; }
+
+.icon-diamond:before {
+  content: "a"; }
+
+.icon-bank-note-2:before {
+  content: "b"; }
+
+.icon-credit-card:before {
+  content: "c"; }
+
+.icon-piggy-bank:before {
+  content: "d"; }
+
+.icon-calendar-2:before {
+  content: "e"; }
+
+.icon-wallet-1:before {
+  content: "f"; }
+
+.icon-trophy:before {
+  content: "h"; }
+
+.icon-cards-2:before {
+  content: "k"; }
+
+.icon-bookmark-1:before {
+  content: "g"; }
+
+.icon-bookmark-4:before {
+  content: "i"; }
+
+.icon-edit-3:before {
+  content: "j"; }
+
+.icon-award-4:before {
+  content: "m"; }
+
+.icon-heart-1:before {
+  content: "n"; }
+
+.icon-hand-like-2:before {
+  content: "o"; }
+
+.icon-present:before {
+  content: "p"; }
+
+.icon-star-2:before {
+  content: "r"; }
+
+.icon-magic-wand-2:before {
+  content: "s"; }
+
+.icon-bubble-conversation-6:before {
+  content: "t"; }
+
+.icon-chat-bubble-1:before {
+  content: "u"; }
+
+.icon-smiley-happy-4:before {
+  content: "v"; }
+
+.icon-call-3:before {
+  content: "w"; }
+
+.icon-call-1:before {
+  content: "x"; }
+
+.icon-megaphone-2:before {
+  content: "y"; }
+
+.icon-mail-1:before {
+  content: "7"; }
+
+.icon-mail-read:before {
+  content: "8"; }
+
+.icon-user-add-2:before {
+  content: "9"; }
+
+.icon-contacts-2:before {
+  content: "!"; }
+
+.icon-user-2:before {
+  content: "\""; }
+
+.icon-camera-front:before {
+  content: "#"; }
+
+.icon-photo-1:before {
+  content: "$"; }
+
+.icon-flag-1:before {
+  content: "%"; }
+
+.icon-download-2:before {
+  content: "&"; }
+
+.icon-upload-2:before {
+  content: "'"; }
+
+.icon-megaphone-1:before {
+  content: "("; }
+
+.icon-rss-1:before {
+  content: ")"; }
+
+.icon-refresh:before {
+  content: "*"; }
+
+.icon-setting-gear:before {
+  content: "+"; }
+
+.icon-bell:before {
+  content: ","; }
+
+.icon-transfer:before {
+  content: "-"; }
+
+.icon-wrench:before {
+  content: "."; }
+
+.icon-coins-2:before {
+  content: "/"; }
+
+.icon-hourglass-1:before {
+  content: ":"; }
+
+.icon-business-chart-1:before {
+  content: ";"; }
+
+.icon-chart-up:before {
+  content: "<"; }
+
+.icon-business-chart-2:before {
+  content: "="; }
+
+.icon-pie-chart-2:before {
+  content: ">"; }
+
+.icon-globe-1:before {
+  content: "?"; }
+
+.icon-house-2:before {
+  content: "@"; }
+
+.icon-database:before {
+  content: "["; }
+
+.icon-ipad-2:before {
+  content: "]"; }
+
+.icon-imac:before {
+  content: "^"; }
+
+.icon-list-2:before {
+  content: "_"; }
+
+.icon-slots-icon:before {
+  content: "|"; }
+
+.icon-arrow-circle-30:before {
+  content: "}"; }
+
+.icon-arrow-circle-29:before {
+  content: "~"; }
+
+.icon-file-1:before {
+  content: "\\"; }
+
+.icon-lock-unlock-2:before {
+  content: "\E001"; }
+
+.icon-link-3:before {
+  content: "\E002"; }
+
+.icon-crosshair-2:before {
+  content: "\E003"; }
+
+.icon-magnifier:before {
+  content: "\E004"; }
+
+.icon-delete-2:before {
+  content: "\E005"; }
+
+.icon-key-1:before {
+  content: "\E006"; }
+
+.icon-printer:before {
+  content: "\E007"; }
+
+.icon-lightbulb-2:before {
+  content: "\E008"; }
+
+.icon-arrow-down:before {
+  content: "\E009"; }
+
+.icon-arrow-up:before {
+  content: "\E00A"; }
+
+.icon-calendar-1:before {
+  content: "\E00B"; }
+
+.icon-minus-1:before {
+  content: "\E00C"; }
+
+.icon-pin-1:before {
+  content: "\E00E"; }
+
+.icon-reply-mail-2:before {
+  content: "\E00D"; }
+
+.icon-shield-3:before {
+  content: "\E00F"; }
+
+.icon-star-1:before {
+  content: "\E010"; }
+
+.icon-shuffle:before {
+  content: "\E011"; }
+
+.icon-roulette-icon:before {
+  content: "`"; }
+
+.icon-my-activity-icon:before {
+  content: "{"; }
+
+.icon-logo:before {
+  content: "\E012"; }
+
+.icon-info-icon:before {
+  content: "\E013"; }
+
+.icon-shopping-cart-4:before {
+  content: "q"; }
+
+.icon-facebook:before {
+  content: "\E015"; }
+
+.icon-lock-2:before {
+  content: "\E000"; }
+
+.icon-address-1:before {
+  content: "z"; }
+
+.icon-connection-2:before {
+  content: "\E016"; }
+
+.icon-joystick-3:before {
+  content: "\E017"; }
+
+.icon-bubble-ask-2:before {
+  content: "\E018"; }
+
+.icon-bubble-conversation-5:before {
+  content: "\E019"; }
+
+.icon-info-overflow:before {
+  content: "\E01A"; }
+
+.icon-icon-star:before {
+  content: "\E01C"; }
+
+.icon-twitter:before {
+  content: "\E01D"; }
+
+.icon-profile-1:before {
+  content: "E"; }
+
+.icon-document-2:before {
+  content: "\E01F"; }
+
+.icon-id-5:before {
+  content: "\E01E"; }
+
+.icon-alert-2:before {
+  content: "F"; }
+
+.icon-vip-live-chat:before {
+  content: "\E020"; }
+
+.icon-refer-a-friend:before {
+  content: "\E021"; }
+
+.icon-compass-1:before {
+  content: "\E022"; }
+
+.icon-icon-shield:before {
+  content: "\E023"; }
+
+.icon-sign-new-2:before {
+  content: "\E024"; }
+
+.icon-cards:before {
+  content: "\E025"; }
+
+.icon-table-games-icon:before {
+  content: "\E027"; }
+
+.icon-live-dealer-icon:before {
+  content: "\E028"; }
+
+.icon-iconcancelsubscription:before {
+  content: "\E029"; }
+
+.icon-neu:before {
+  content: "\E02A"; }
+
+.icon-nya:before {
+  content: "\E02B"; }
+
+.icon-dreamcar:before {
+  content: "\E02C"; }
+
+.icon-scissor:before {
+  content: "\E02D"; }
+
+.icon-scissorsoverview:before {
+  content: "\E02E"; }
+
+.icon-whatsapp-icon:before {
+  content: "\E026"; }
+
+.icon-award-3:before {
+  content: "l"; }
+
+.icon-gplus:before {
+  content: "\E014"; }
+
+.icon-choose-your-numbers:before {
+  content: "\E02F"; }
+
+.icon-prize-table:before {
+  content: "\E031"; }
+
+.icon-classic:before {
+  content: "\E033"; }
+
+.icon-popular:before {
+  content: "\E036"; }
+
+.icon-lottery:before {
+  content: "\E032"; }
+
+.icon-all-scratchcards:before {
+  content: "\E030"; }
+
+.icon-timer:before {
+  content: "\E01B"; }
+
+.icon-hide:before {
+  content: "\E034"; }
+
+.icon-chevron-single:before {
+  content: "\E035"; }
+
+.icon-heart:before {
+  content: "\E037"; }
+
+.icon-fire:before {
+  content: "\E038"; }
+
+.icon-chevron-double:before {
+  content: "\E039"; }
+
+.icon-stars:before {
+  content: "\E03A"; }
+
+@font-face {
+  font-family: 'daxline-pro';
+  src: url("/static/fonts/ff-daxline-pro/200/normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'daxline-pro';
+  src: url("/static/fonts/ff-daxline-pro/400/normal.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'daxline-pro';
+  src: url("/static/fonts/ff-daxline-pro/500/normal.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'daxline-pro';
+  src: url("/static/fonts/ff-daxline-pro/700/normal.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'daxline-pro';
+  src: url("/static/fonts/ff-daxline-pro/800/normal.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'daxline-pro';
+  src: url("/static/fonts/ff-daxline-pro/900/normal.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

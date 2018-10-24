@@ -1,42 +1,190 @@
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css');
-
-
+/* COLOUR VARS */
 $green-bk: #69A507;
 $white: #FFFFFF;
+$black: #000000;
+$dark-green: #536519;
 
+/* MEDIA QUERY */
 $break-small: 320px;
 $break-med: 768px;
 $break-large: 1024px;
 
-$c-small: 33%;
+/* PADDING MARGINS */
+$c-small: 33.33%;
+$c-large: 66.68%;
 $l-margin: 17px;
+$l-halfwidth: 50%;
 $l-pad: 7px;
-$l-doublepad:  -webkit-calc(#{$l-pad} * 2);
+$l-doublepad:  14px;
 
+/* FONT SIZE */
 $title-size: 28px;
 $text-size: 14px;
 
+
+/* SITE */
 body{
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'daxline-pro', sans-serif;
 	padding:0px;
 	margin:0px;
 }
+.icon{
+	display:inline-block;
+}
+.clear{
+	clear:both;
+}
+a:hover{
+	text-decoration:underline;
+	cursor:pointer;
+}
+div.body{
+	position:relative;
+}
+
+
+/* HEADER */
 .nav-bar {	
 	height: 70px;	
 	width: 100%;	
 	background: linear-gradient(270deg, #F2F4F2 0%, #FFFFFF 100%);	
 	box-shadow: 0 1px 0 0 #D9DEDA;
+	img.logo{
+		margin-top:$l-pad * 2;
+		margin-left:$l-pad * 3;
+		width:128px;
+	}
+	.join-button {
+		margin-top:$l-margin;
+		margin-right:$l-pad * 3;
+		color:$white;
+		float: right;
+		text-align:center;
+		font-size: 14px;
+		font-weight: 900;
+		line-height: 31px;
+		height: 32px;
+		width: 85px;
+		border-radius: 2px;
+		background: linear-gradient(90deg, #A5CD28 0%, #69A507 100%);
+		box-shadow: 0 4px 7px 0 rgba(1,36,6,0.2);
+	}
+}
+
+/* TEXT BANNERS */
+.text-title-box{
+	text-align:center;
+	text-transform: uppercase;
+	margin: $l-margin 0 $l-margin*2 0; 
+	h1{
+		color: $green-bk;
+		font-size: 28px;
+		font-weight: 900;
+		line-height: 30px;
+		margin-bottom: $l-pad;
+		span.black{
+			color:$black;
+		}
+	}
+	img{
+		width: 120px;
+	}
+}
+.text-info-banner{
+	text-align:center;
+	padding:$l-pad;
+	width: 100%;
+	height:70px;
+	background-color: rgba(242,244,242,0.7);
+	img{
+		width: auto;
+		height: 70px;
+		margin-right: $l-pad*2;
+	}
+	div.textbox{
+		height: 70px;
+		display:inline-block;
+		vertical-align: middle;
+		p{
+		    line-height: 10px;
+    		margin: 0px;
+    		span.bold{
+    			font-weight: bold;
+    		}
+    		span.green{
+    			color:$green-bk;
+    			font-weight: bold;
+    			margin-left:20px;
+    		}
+		}
+	}
+}
+
+/* LOTTO CARD COMPONENTS */
+.lotto-card.two-thirds{
+	width: calc(#{$c-large} - #{$l-margin}*1 - #{$l-pad}*3);
+}
+.lotto-card.kenoland{
+	width: calc(#{$c-small} - #{$l-margin} - (#{$l-pad});
+	margin-left: $l-margin;
+	border: none;
+	min-height: 302px;
+	.header{
+		background: $dark-green url('/static/images/kenoland.png') no-repeat right top;
+ 		background-size: auto 100%;
+		height: 120px;
+		width: 100%;
+	}
+	.body{
+		text-align: center;
+		height: 180px;
+		background: linear-gradient(90deg, #F56632 0%, #C62C82 58.64%, #C52B83 100%);
+		p{	
+			margin:0px;
+			padding-top:$l-doublepad;
+			font-weight: 500;
+			font-size: 14px;
+			color: $white;
+		}
+		img{
+			height:57px;
+			width:auto;
+			margin-top: $l-pad;
+			margin-right: $l-pad;
+		}
+		div.floatLeft{
+			height:70px;
+			display:inline-block;
+			vertical-align: middle;
+			p{	
+				font-weight: 900;
+				line-height:0px;
+				font-size: 20px;
+				span.large{
+					font-size: 40px;
+				}
+			}
+		}
+	}											
 }
 
 .lotto-card{
-	background:#4a4;
+	position:relative;
 	float: left;
-	width: -webkit-calc(#{$c-small} - #{$l-margin});
-	margin-left: $l-margin;
+	width: calc(#{$c-small} - #{$l-margin} - (#{$l-pad}*2);
+	margin-left: $l-margin + $l-pad;
 	margin-bottom: $l-margin;
 	min-height: 300px;
+	border: 1px solid #D9DEDA;
+	div.borderLeft{
+		position:absolute;
+		height:100%;
+		width:7px;
+		background-color: #714C9C;
+		left:-7px;
+	}
 	div.img{
+		overflow:hidden;
 		position: relative;
 		width:100%;
 		height:154px;
@@ -80,19 +228,57 @@ body{
 				text-transform: uppercase;
 			}
 		}
-		i.selection-left{
+		.icon.selection-left{
 			height:100%;
 			margin-right:20%;
-			font-size:40px;
+			font-size:21px;
 		}
 
-		i.selection-right{
+		.icon.selection-right{
 			height:100%;
 			margin-left:20%;
-			font-size:40px;
+			font-size:21px;
 		}
 	}
-	
+	div.lotto-numbers{
+		float: left;
+		//width: -webkit-calc(#{$l-halfwidth} - #{$l-doublepad}*2);
+		width: calc(#{$l-halfwidth} - #{$l-doublepad}*2);
+		padding: $l-doublepad;
+		p.title{
+			margin:0px;
+			margin-bottom:$l-pad;
+		}
+		div.number-circle{
+			float:left;
+			margin-right:$l-pad;
+			border: 1px solid #D9DEDA;
+			border-radius:50%;
+			height:35px;
+			width:35px;
+			line-height:35px;
+			text-align: center;
+		}
+		div.number-circle.red{
+			border: 1px solid #C53422;
+		}
+	}
+
+	div.card-links{
+		position:relative;		
+		clear:both;
+		padding-top:$l-doublepad;
+		text-align:right;
+		width:100%;
+		color:#666;
+		font-size: 14px;
+		font-weight: bold;
+		a{
+			color: $green-bk;
+			margin:0 $l-doublepad 0 $l-doublepad;
+		}
+	}
+
 
 	@media screen and (max-width: $break-small) {
 	// width: 100px;
@@ -105,5 +291,6 @@ body{
 }
 
 .mon-wed-lotto .img{
-	 background: url('/static/mwlottobk.png') no-repeat center;
+	background: url('/static/images/mwlottobk.png') no-repeat center top;
+ 	background-size: 100%;
 }

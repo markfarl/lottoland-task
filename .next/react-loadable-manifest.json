@@ -34,5 +34,21 @@
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
+  ],
+  "../scss/icon.scss": [
+    {
+      "id": "./scss/icon.scss",
+      "name": "./scss/icon.scss",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "../scss/daxline-pro.scss": [
+    {
+      "id": "./scss/daxline-pro.scss",
+      "name": "./scss/daxline-pro.scss",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
   ]
 }
