@@ -66,7 +66,7 @@ class Kenoland extends Component{
 					</div>
 				</div>
 				<div className="body">
-					<p>Next availble draw: <i className="icon icon-clock-2"></i> {this.state.minutes} : {this.state.seconds}</p>
+					<p>Next availble draw: <i className="icon icon-clock-2"></i> {this.state.minutes}:{this.state.seconds}</p>
 					<img src="/static/images/kenolandball.png" />
 					<div className="floatLeft"><p>$<span className="large">10</span> million</p></div>
 					<div className="bet-button">
