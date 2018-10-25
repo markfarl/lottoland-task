@@ -24,6 +24,12 @@ body {
 .clear {
   clear: both; }
 
+.clear.top {
+  clear: both; }
+  @media screen and (max-width: 1024px) {
+    .clear.top {
+      clear: none; } }
+
 a:hover {
   text-decoration: underline;
   cursor: pointer; }
@@ -31,6 +37,10 @@ a:hover {
 div.body {
   position: relative;
   overflow: hidden; }
+
+i {
+  position: relative;
+  top: 2px; }
 
 /***********/
 /* HEADER */
@@ -58,6 +68,15 @@ div.body {
     border-radius: 2px;
     background: linear-gradient(90deg, #A5CD28 0%, #69A507 100%);
     box-shadow: 0 4px 7px 0 rgba(1, 36, 6, 0.2); }
+  .nav-bar .promo-text {
+    float: right;
+    margin-top: 21px;
+    margin-right: 21px;
+    font-family: 'Arial';
+    color: #69A507;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 22px; }
 
 /*****************/
 /* TEXT BANNERS */
@@ -84,18 +103,23 @@ div.body {
   padding-top: 7px;
   padding-bottom: 7px;
   width: 100%;
-  height: 70px;
+  min-height: 70px;
   background-color: rgba(242, 244, 242, 0.7); }
   .text-info-banner img {
     width: auto;
     height: 70px;
     margin-right: 14px; }
   .text-info-banner div.textbox {
-    height: 70px;
+    position: relative;
+    top: -30px;
     display: inline-block;
     vertical-align: middle; }
+    @media screen and (max-width: 1024px) {
+      .text-info-banner div.textbox {
+        display: block;
+        top: 0px; } }
     .text-info-banner div.textbox p {
-      line-height: 10px;
+      line-height: 16px;
       margin: 0px; }
       .text-info-banner div.textbox p span.bold {
         font-weight: bold; }
@@ -112,6 +136,9 @@ div.body {
   .lotto-card.two-thirds div.lotto-numbers {
     float: left;
     width: calc(50% - 14px*2); }
+  @media screen and (max-width: 1024px) {
+    .lotto-card.two-thirds {
+      width: calc(100% - 17px - (7px)); } }
 
 .lotto-card.kenoland {
   width: calc(33.33% - 17px - (7px));
@@ -138,6 +165,26 @@ div.body {
       width: auto;
       margin-top: 7px;
       margin-right: 7px; }
+    .lotto-card.kenoland .body div.bet-button {
+      margin: auto;
+      margin-top: -20px;
+      height: 49px;
+      width: 159px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, #A5CD28 0%, #69A507 100%);
+      box-shadow: 0 4px 7px 0 rgba(1, 36, 6, 0.2); }
+      .lotto-card.kenoland .body div.bet-button h1 {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 25px;
+        margin: 0px; }
+      .lotto-card.kenoland .body div.bet-button p {
+        margin: 0px;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 18px;
+        padding-top: 0px; }
     .lotto-card.kenoland .body div.floatLeft {
       height: 70px;
       display: inline-block;
@@ -148,6 +195,12 @@ div.body {
         font-size: 20px; }
         .lotto-card.kenoland .body div.floatLeft p span.large {
           font-size: 40px; }
+  @media screen and (max-width: 1024px) {
+    .lotto-card.kenoland {
+      width: calc(50% - 17px - (7px)); } }
+  @media screen and (max-width: 768px) {
+    .lotto-card.kenoland {
+      width: calc(100% - 17px - (7px)); } }
 
 .lotto-card {
   position: relative;
@@ -175,9 +228,14 @@ div.body {
       padding: 14px; }
       .lotto-card div.img div.head-text p {
         margin: 0px; }
+      .lotto-card div.img div.head-text img {
+        float: right;
+        max-height: 80px;
+        width: auto; }
     .lotto-card div.img p.title {
       color: #FFFFFF;
       font-size: 28px;
+      text-transform: uppercase;
       font-weight: 900;
       line-height: 30px;
       text-shadow: 0 0 21px 0 #000000; }
@@ -185,6 +243,15 @@ div.body {
       font-size: 14px;
       font-weight: 500;
       line-height: 16px; }
+    .lotto-card div.img p.sub-top-title {
+      text-transform: uppercase;
+      font-size: 21px;
+      font-weight: 900;
+      line-height: 22px; }
+    .lotto-card div.img p.sub-time-title {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 22px; }
     .lotto-card div.img div.rectangle {
       position: absolute;
       text-align: center;
@@ -244,7 +311,16 @@ div.body {
       font-size: 14px;
       font-weight: bold;
       margin: 0 14px 0 14px; }
+  @media screen and (max-width: 1024px) {
+    .lotto-card {
+      width: calc(50% - 17px - (7px*2)); } }
+  @media screen and (max-width: 768px) {
+    .lotto-card {
+      width: calc(100% - 17px - (7px)); } }
 
+/**************************/
+/* LOTTO CARD ITEMS */
+/************************/
 .mon-wed-lotto .img {
   background: url("/static/images/mwlottobk.png") no-repeat center top; }
 
@@ -274,6 +350,42 @@ div.body {
 
 .ozlotto div.lotto-numbers div.number-circle.red {
   border: 1px solid #479E3D; }
+
+.us-power .img {
+  background: linear-gradient(90deg, #FA6A52 0%, #E92A2A 100%); }
+
+.us-power div.borderLeft {
+  background-color: #FA6A52; }
+
+.us-power div.lotto-numbers div.number-circle.red {
+  border: 1px solid #FA6A52; }
+
+.world-millions .img {
+  background: linear-gradient(90deg, #51A7E4 0%, #1A4088 100%); }
+
+.world-millions div.borderLeft {
+  background-color: #51A7E4; }
+
+.mega-millions .img {
+  background: linear-gradient(90deg, #88ADDF 0%, #3957C8 100%); }
+
+.mega-millions div.borderLeft {
+  background-color: #88ADDF; }
+
+.mega-millions div.lotto-numbers div.number-circle.red {
+  border: 1px solid #88ADDF; }
+
+.keno-247 .img {
+  background: linear-gradient(92.59deg, #ED1A3B 0%, rgba(198, 22, 139, 0.5) 100%); }
+
+.keno-247 div.borderLeft {
+  background-color: #ED1A3B; }
+
+.fri-lotto .img {
+  background: linear-gradient(90deg, #E0017C 0%, #95248C 100%, rgba(144, 38, 141, 0.5) 100%); }
+
+.fri-lotto div.borderLeft {
+  background-color: #E0017C; }
 
 @font-face {
   font-family: "ll-icon-font";
@@ -768,37 +880,37 @@ div.body {
 
 @font-face {
   font-family: 'daxline-pro';
-  src: url("/static/fonts/ff-daxline-pro/200/normal.ttf") format("truetype");
+  src: url("/static/fonts/ff-daxline-pro/200/normal.eot?#iefix") format("embedded-opentype"), url("/static/fonts/ff-daxline-pro/200/normal.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'daxline-pro';
-  src: url("/static/fonts/ff-daxline-pro/400/normal.ttf") format("truetype");
+  src: url("/static/fonts/ff-daxline-pro/400/normal.eot?#iefix") format("embedded-opentype"), url("/static/fonts/ff-daxline-pro/400/normal.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'daxline-pro';
-  src: url("/static/fonts/ff-daxline-pro/500/normal.ttf") format("truetype");
+  src: url("/static/fonts/ff-daxline-pro/500/normal.eot?#iefix") format("embedded-opentype"), url("/static/fonts/ff-daxline-pro/500/normal.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'daxline-pro';
-  src: url("/static/fonts/ff-daxline-pro/700/normal.ttf") format("truetype");
+  src: url("/static/fonts/ff-daxline-pro/700/normal.eot?#iefix") format("embedded-opentype"), url("/static/fonts/ff-daxline-pro/700/normal.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'daxline-pro';
-  src: url("/static/fonts/ff-daxline-pro/800/normal.ttf") format("truetype");
+  src: url("/static/fonts/ff-daxline-pro/800/normal.eot?#iefix") format("embedded-opentype"), url("/static/fonts/ff-daxline-pro/800/normal.ttf") format("truetype");
   font-weight: 800;
   font-style: normal; }
 
 @font-face {
   font-family: 'daxline-pro';
-  src: url("/static/fonts/ff-daxline-pro/900/normal.ttf") format("truetype");
+  src: url("/static/fonts/ff-daxline-pro/900/normal.eot?#iefix") format("embedded-opentype"), url("/static/fonts/ff-daxline-pro/900/normal.ttf") format("truetype");
   font-weight: 900;
   font-style: normal; }
 

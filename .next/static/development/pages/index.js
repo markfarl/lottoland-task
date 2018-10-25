@@ -1,5 +1,231 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
 
+/***/ "./components/FriLotto.js":
+/*!********************************!*\
+  !*** ./components/FriLotto.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\PROJECT SYNC\\Lottoland\\lottoland-task\\components\\FriLotto.js";
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var FriLotto =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(FriLotto, _Component);
+
+  function FriLotto() {
+    _classCallCheck(this, FriLotto);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(FriLotto).apply(this, arguments));
+  }
+
+  _createClass(FriLotto, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lotto-card fri-lotto",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "borderLeft",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "head-text",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/static/images/frilotto.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }, "Fri Lotto"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-top-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, "$50 Million"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-time-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon icon-clock-2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }), " 2 Std. 47 Min.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "rectangle",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "icon icon-arrow-67 selection-left",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "inner-text",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, "Draw ", this.props.data.nr), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title-date",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, this.props.data.drawingDate)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "icon icon-arrow-68 selection-right",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lotto-numbers",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, "Winning numbers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "number-circle-container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, this.props.data.numbers.map(function (name, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: index,
+          className: "number-circle",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 42
+          },
+          __self: this
+        }, name);
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "clear",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-links",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, "Prize details"), " | ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, "Help & FAQ")));
+    }
+  }]);
+
+  return FriLotto;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (FriLotto);
+
+/***/ }),
+
 /***/ "./components/Header.js":
 /*!******************************!*\
   !*** ./components/Header.js ***!
@@ -11,7 +237,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "D:\\PROJECTS-SYNC\\lottoland-task\\components\\Header.js";
+var _jsxFileName = "C:\\PROJECT SYNC\\Lottoland\\lottoland-task\\components\\Header.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -69,7 +295,14 @@ function (_Component) {
           lineNumber: 9
         },
         __self: this
-      }, "JOIN"));
+      }, "JOIN"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "promo-text",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, "Home of lotto betting"));
     }
   }]);
 
@@ -77,6 +310,445 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./components/Keno247.js":
+/*!*******************************!*\
+  !*** ./components/Keno247.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\PROJECT SYNC\\Lottoland\\lottoland-task\\components\\Keno247.js";
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var Keno247 =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Keno247, _Component);
+
+  function Keno247() {
+    _classCallCheck(this, Keno247);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Keno247).apply(this, arguments));
+  }
+
+  _createClass(Keno247, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lotto-card keno-247",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "borderLeft",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "head-text",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/static/images/keno247.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }, "Keno 24/7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-top-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, "$50 Million"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-time-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon icon-clock-2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }), " 2 Std. 47 Min.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "rectangle",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "icon icon-arrow-67 selection-left",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "inner-text",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, "Draw ", this.props.data.nr), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title-date",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, this.props.data.drawingDate)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "icon icon-arrow-68 selection-right",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lotto-numbers",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, "Winning numbers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "number-circle-container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, this.props.data.numbers.map(function (name, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: index,
+          className: "number-circle",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 42
+          },
+          __self: this
+        }, name);
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "clear",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-links",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, "Prize details"), " | ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, "Help & FAQ")));
+    }
+  }]);
+
+  return Keno247;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Keno247);
+
+/***/ }),
+
+/***/ "./components/Kenoland.js":
+/*!********************************!*\
+  !*** ./components/Kenoland.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\PROJECT SYNC\\Lottoland\\lottoland-task\\components\\Kenoland.js";
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+
+
+
+var Kenoland =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Kenoland, _Component);
+
+  function Kenoland() {
+    var _this;
+
+    _classCallCheck(this, Kenoland);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Kenoland).call(this));
+    _this.state = {
+      seconds: '00',
+      minutes: '4'
+    };
+    _this.secondsRemaining;
+    _this.intervalHandle;
+    _this.startCountDown = _this.startCountDown.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.tick = _this.tick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    return _this;
+  }
+
+  _createClass(Kenoland, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.startCountDown();
+    }
+  }, {
+    key: "tick",
+    value: function tick() {
+      var min = Math.floor(this.secondsRemaining / 60);
+      var sec = this.secondsRemaining - min * 60;
+      this.setState({
+        minutes: min,
+        seconds: sec
+      });
+
+      if (sec < 10) {
+        this.setState({
+          seconds: "0" + this.state.seconds
+        });
+      }
+
+      if (min < 10) {
+        this.setState({
+          value: "0" + min
+        });
+      }
+
+      if (min === 0 & sec === 0) {
+        clearInterval(this.intervalHandle);
+      }
+
+      this.secondsRemaining--;
+    }
+  }, {
+    key: "startCountDown",
+    value: function startCountDown() {
+      this.intervalHandle = setInterval(this.tick, 1000);
+      var time = this.state.minutes;
+      this.secondsRemaining = time * 60;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lotto-card kenoland",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img header",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "head-text",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60
+        },
+        __self: this
+      }, "KENOLAND"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }, "Draws every 4 minutes"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "body",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69
+        },
+        __self: this
+      }, "Next availble draw: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon icon-clock-2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69
+        },
+        __self: this
+      }), " ", this.state.minutes, " : ", this.state.seconds), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/static/images/kenolandball.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 70
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "floatLeft",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71
+        },
+        __self: this
+      }, "$", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "large",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71
+        },
+        __self: this
+      }, "10"), " million")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "bet-button",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73
+        },
+        __self: this
+      }, "1 Quicky $1.00"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 74
+        },
+        __self: this
+      }, "Bet Now"))));
+    }
+  }]);
+
+  return Kenoland;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Kenoland);
 
 /***/ }),
 
@@ -92,7 +764,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-var _jsxFileName = "D:\\PROJECTS-SYNC\\lottoland-task\\components\\Layout.js";
+var _jsxFileName = "C:\\PROJECT SYNC\\Lottoland\\lottoland-task\\components\\Layout.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -153,6 +825,263 @@ function (_Component) {
 
 /***/ }),
 
+/***/ "./components/MegaMillions.js":
+/*!************************************!*\
+  !*** ./components/MegaMillions.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\PROJECT SYNC\\Lottoland\\lottoland-task\\components\\MegaMillions.js";
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var MegaMillions =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(MegaMillions, _Component);
+
+  function MegaMillions() {
+    _classCallCheck(this, MegaMillions);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(MegaMillions).apply(this, arguments));
+  }
+
+  _createClass(MegaMillions, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lotto-card mega-millions",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "borderLeft",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "head-text",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/static/images/megamillions.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }, "US Mega Millions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-top-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, "$50 Million*"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-time-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon icon-clock-2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }), " 2 Std. 47 Min.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "rectangle",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "icon icon-arrow-67 selection-left",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "inner-text",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, "Draw ", this.props.data.nr), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title-date",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, this.props.data.drawingDate)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "icon icon-arrow-68 selection-right",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lotto-numbers",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, "Winning numbers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "number-circle-container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, this.props.data.numbers.map(function (name, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: index,
+          className: "number-circle",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 42
+          },
+          __self: this
+        }, name);
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lotto-numbers",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }, "Supps"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "number-circle-container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, this.props.data.supplementary.map(function (name, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: index,
+          className: "number-circle red",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 50
+          },
+          __self: this
+        }, name);
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "clear",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-links",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }, "Prize details"), " | ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }, "Help & FAQ")));
+    }
+  }]);
+
+  return MegaMillions;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (MegaMillions);
+
+/***/ }),
+
 /***/ "./components/MonWedLotto.js":
 /*!***********************************!*\
   !*** ./components/MonWedLotto.js ***!
@@ -167,7 +1096,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "D:\\PROJECTS-SYNC\\lottoland-task\\components\\MonWedLotto.js";
+var _jsxFileName = "C:\\PROJECT SYNC\\Lottoland\\lottoland-task\\components\\MonWedLotto.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -283,7 +1212,7 @@ function (_Component) {
           lineNumber: 29
         },
         __self: this
-      }, "Draw"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
+      }, "Draw ", this.props.data.nr), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 29
@@ -326,6 +1255,7 @@ function (_Component) {
         __self: this
       }, this.props.data.numbers.map(function (name, index) {
         return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          key: index,
           className: "number-circle",
           __source: {
             fileName: _jsxFileName,
@@ -356,6 +1286,7 @@ function (_Component) {
         __self: this
       }, this.props.data.supplementary.map(function (name, index) {
         return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          key: index,
           className: "number-circle red",
           __source: {
             fileName: _jsxFileName,
@@ -435,7 +1366,7 @@ function (_Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "D:\\PROJECTS-SYNC\\lottoland-task\\components\\OzLotto.js";
+var _jsxFileName = "C:\\PROJECT SYNC\\Lottoland\\lottoland-task\\components\\OzLotto.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -541,7 +1472,7 @@ function (_Component) {
           lineNumber: 25
         },
         __self: this
-      }, "Draw"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+      }, "Draw ", this.props.data.nr), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 25
@@ -584,6 +1515,7 @@ function (_Component) {
         __self: this
       }, this.props.data.numbers.map(function (name, index) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: index,
           className: "number-circle",
           __source: {
             fileName: _jsxFileName,
@@ -614,6 +1546,7 @@ function (_Component) {
         __self: this
       }, this.props.data.supplementary.map(function (name, index) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: index,
           className: "number-circle red",
           __source: {
             fileName: _jsxFileName,
@@ -672,7 +1605,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "D:\\PROJECTS-SYNC\\lottoland-task\\components\\Powerball.js";
+var _jsxFileName = "C:\\PROJECT SYNC\\Lottoland\\lottoland-task\\components\\Powerball.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -782,7 +1715,7 @@ function (_Component) {
           lineNumber: 29
         },
         __self: this
-      }, "Draw"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
+      }, "Draw ", this.props.data.nr), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 29
@@ -825,6 +1758,7 @@ function (_Component) {
         __self: this
       }, this.props.data.numbers.map(function (name, index) {
         return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          key: index,
           className: "number-circle",
           __source: {
             fileName: _jsxFileName,
@@ -855,6 +1789,7 @@ function (_Component) {
         __self: this
       }, this.props.data.supplementary.map(function (name, index) {
         return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          key: index,
           className: "number-circle red",
           __source: {
             fileName: _jsxFileName,
@@ -934,7 +1869,7 @@ function (_Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "D:\\PROJECTS-SYNC\\lottoland-task\\components\\Tattslotto.js";
+var _jsxFileName = "C:\\PROJECT SYNC\\Lottoland\\lottoland-task\\components\\Tattslotto.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -1040,7 +1975,7 @@ function (_Component) {
           lineNumber: 25
         },
         __self: this
-      }, "Draw"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+      }, "Draw ", this.props.data.nr), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 25
@@ -1083,6 +2018,7 @@ function (_Component) {
         __self: this
       }, this.props.data.numbers.map(function (name, index) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: index,
           className: "number-circle",
           __source: {
             fileName: _jsxFileName,
@@ -1113,6 +2049,7 @@ function (_Component) {
         __self: this
       }, this.props.data.supplementary.map(function (name, index) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: index,
           className: "number-circle red",
           __source: {
             fileName: _jsxFileName,
@@ -1154,6 +2091,489 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Tattslotto);
+
+/***/ }),
+
+/***/ "./components/USpower.js":
+/*!*******************************!*\
+  !*** ./components/USpower.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\PROJECT SYNC\\Lottoland\\lottoland-task\\components\\USpower.js";
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var USpower =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(USpower, _Component);
+
+  function USpower() {
+    _classCallCheck(this, USpower);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(USpower).apply(this, arguments));
+  }
+
+  _createClass(USpower, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lotto-card two-thirds us-power",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "borderLeft",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "head-text",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/static/images/uspower.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }, "US Power"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-top-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, "$50 Million*"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-time-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon icon-clock-2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }), " 2 Std. 47 Min.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "rectangle",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "icon icon-arrow-67 selection-left",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "inner-text",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, "Draw ", this.props.data.nr), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title-date",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, this.props.data.drawingDate)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "icon icon-arrow-68 selection-right",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lotto-numbers",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, "Winning numbers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "number-circle-container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, this.props.data.numbers.map(function (name, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: index,
+          className: "number-circle",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 42
+          },
+          __self: this
+        }, name);
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lotto-numbers",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }, "Supps"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "number-circle-container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, this.props.data.supplementary.map(function (name, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: index,
+          className: "number-circle red",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 50
+          },
+          __self: this
+        }, name);
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "clear",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-links",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }, "Prize details"), " | ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }, "Help & FAQ")));
+    }
+  }]);
+
+  return USpower;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (USpower);
+
+/***/ }),
+
+/***/ "./components/WorldMillions.js":
+/*!*************************************!*\
+  !*** ./components/WorldMillions.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\PROJECT SYNC\\Lottoland\\lottoland-task\\components\\WorldMillions.js";
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var WorldMillions =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(WorldMillions, _Component);
+
+  function WorldMillions() {
+    _classCallCheck(this, WorldMillions);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(WorldMillions).apply(this, arguments));
+  }
+
+  _createClass(WorldMillions, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lotto-card world-millions",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "borderLeft",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "img",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "head-text",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/static/images/worldmillions.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }, "World Millions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-top-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, "$50 Million"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "sub-time-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon icon-clock-2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }), " 2 Std. 47 Min.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "rectangle",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "icon icon-arrow-67 selection-left",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "inner-text",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, "Draw ", this.props.data.nr), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title-date",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, this.props.data.drawingDate)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "icon icon-arrow-68 selection-right",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lotto-numbers",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, "Winning numbers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "number-circle-container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, this.props.data.numbers.map(function (name, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: index,
+          className: "number-circle",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 42
+          },
+          __self: this
+        }, name);
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "clear",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-links",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, "Prize details"), " | ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, "Help & FAQ")));
+    }
+  }]);
+
+  return WorldMillions;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (WorldMillions);
 
 /***/ }),
 
@@ -29554,16 +30974,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var _components_MonWedLotto__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/MonWedLotto */ "./components/MonWedLotto.js");
-/* harmony import */ var _components_Powerball__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Powerball */ "./components/Powerball.js");
-/* harmony import */ var _components_Tattslotto__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Tattslotto */ "./components/Tattslotto.js");
-/* harmony import */ var _components_OzLotto__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/OzLotto */ "./components/OzLotto.js");
-/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../scss/index.scss */ "./scss/index.scss");
-/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_scss_index_scss__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _scss_icon_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../scss/icon.scss */ "./scss/icon.scss");
-/* harmony import */ var _scss_icon_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_scss_icon_scss__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _scss_daxline_pro_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../scss/daxline-pro.scss */ "./scss/daxline-pro.scss");
-/* harmony import */ var _scss_daxline_pro_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_scss_daxline_pro_scss__WEBPACK_IMPORTED_MODULE_10__);
-var _jsxFileName = "D:\\PROJECTS-SYNC\\lottoland-task\\pages\\index.js";
+/* harmony import */ var _components_Kenoland__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Kenoland */ "./components/Kenoland.js");
+/* harmony import */ var _components_Powerball__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Powerball */ "./components/Powerball.js");
+/* harmony import */ var _components_Tattslotto__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Tattslotto */ "./components/Tattslotto.js");
+/* harmony import */ var _components_OzLotto__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/OzLotto */ "./components/OzLotto.js");
+/* harmony import */ var _components_USpower__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/USpower */ "./components/USpower.js");
+/* harmony import */ var _components_WorldMillions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/WorldMillions */ "./components/WorldMillions.js");
+/* harmony import */ var _components_MegaMillions__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/MegaMillions */ "./components/MegaMillions.js");
+/* harmony import */ var _components_Keno247__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Keno247 */ "./components/Keno247.js");
+/* harmony import */ var _components_FriLotto__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/FriLotto */ "./components/FriLotto.js");
+/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../scss/index.scss */ "./scss/index.scss");
+/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_scss_index_scss__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _scss_icon_scss__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../scss/icon.scss */ "./scss/icon.scss");
+/* harmony import */ var _scss_icon_scss__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_scss_icon_scss__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _scss_daxline_pro_scss__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../scss/daxline-pro.scss */ "./scss/daxline-pro.scss");
+/* harmony import */ var _scss_daxline_pro_scss__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_scss_daxline_pro_scss__WEBPACK_IMPORTED_MODULE_16__);
+var _jsxFileName = "C:\\PROJECT SYNC\\Lottoland\\lottoland-task\\pages\\index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -29595,9 +31021,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var logAPI = function logAPI(data) {
-  console.log(data);
-};
+
+
+
+
+
 
 var Home =
 /*#__PURE__*/
@@ -29613,6 +31041,7 @@ function (_Component) {
     var dataStructure = {
       numbers: [],
       supplementary: [],
+      nr: "",
       drawingDate: ""
     };
     _this.state = {
@@ -29620,7 +31049,11 @@ function (_Component) {
       ozPowerBall: dataStructure,
       saturdayOz: dataStructure,
       ozLotto: dataStructure,
-      powerBall: dataStructure
+      powerBall: dataStructure,
+      worldMillions: dataStructure,
+      megaMillions: dataStructure,
+      keno247: dataStructure,
+      fridayLotto: dataStructure
     };
     return _this;
   }
@@ -29631,10 +31064,31 @@ function (_Component) {
       this.getDrawingApi();
     }
   }, {
+    key: "twoNum",
+    value: function twoNum(n) {
+      return n > 9 ? "" + n : "0" + n;
+    }
+  }, {
     key: "niceDate",
     value: function niceDate(date) {
-      var d = new Date(date.year + '-' + date.month + '=' + date.day);
-      return moment__WEBPACK_IMPORTED_MODULE_2___default()(d).format('ddd, DD MMM YYYY');
+      var d = new Date(date.year + '-' + this.twoNum(date.month) + '-' + this.twoNum(date.day) + 'T00:00:00.000Z');
+      return moment__WEBPACK_IMPORTED_MODULE_2___default()(d, "YYYY-MM-DD").format('ddd, DD MMM YYYY');
+    }
+  }, {
+    key: "niceDateTime",
+    value: function niceDateTime(date) {
+      console.log(date);
+      var d = new Date(date.year + '-' + this.twoNum(date.month) + '-' + this.twoNum(date.day) + 'T' + this.twoNum(date.hour) + ':' + this.twoNum(date.minute) + ':00.000Z');
+      return moment__WEBPACK_IMPORTED_MODULE_2___default()(d).format('ddd, DD MMM YYYY') + " at " + moment__WEBPACK_IMPORTED_MODULE_2___default()(d).format('HH:MM');
+    }
+  }, {
+    key: "checkArrayEmpty",
+    value: function checkArrayEmpty(array) {
+      if (array) {
+        return array;
+      } else {
+        return [];
+      }
     }
   }, {
     key: "getDrawingApi",
@@ -29649,24 +31103,55 @@ function (_Component) {
 
         _this2.setState({
           monWedOz: {
-            numbers: result.monWedOz.last.numbers,
-            supplementary: result.monWedOz.last.supplementary,
+            nr: result.monWedOz.last.nr,
+            numbers: _this2.checkArrayEmpty(result.monWedOz.last.numbers),
+            supplementary: _this2.checkArrayEmpty(result.monWedOz.last.supplementary),
             drawingDate: _this2.niceDate(result.monWedOz.last.date)
           },
           ozPowerBall: {
-            numbers: result.ozPowerBall.last.numbers,
-            supplementary: result.ozPowerBall.last.powerBall,
+            nr: result.ozPowerBall.last.nr,
+            numbers: _this2.checkArrayEmpty(result.ozPowerBall.last.numbers),
+            supplementary: _this2.checkArrayEmpty(result.ozPowerBall.last.powerBall),
             drawingDate: _this2.niceDate(result.ozPowerBall.last.date)
           },
           saturdayOz: {
-            numbers: result.saturdayOz.last.numbers,
-            supplementary: result.saturdayOz.last.supplementary,
+            nr: result.saturdayOz.last.nr,
+            numbers: _this2.checkArrayEmpty(result.saturdayOz.last.numbers),
+            supplementary: _this2.checkArrayEmpty(result.saturdayOz.last.supplementary),
             drawingDate: _this2.niceDate(result.saturdayOz.last.date)
           },
           ozLotto: {
-            numbers: result.ozLotto.last.numbers,
-            supplementary: result.ozLotto.last.bonus,
+            nr: result.ozLotto.last.nr,
+            numbers: _this2.checkArrayEmpty(result.ozLotto.last.numbers),
+            supplementary: _this2.checkArrayEmpty(result.ozLotto.last.bonus),
             drawingDate: _this2.niceDate(result.ozLotto.last.date)
+          },
+          powerBall: {
+            nr: result.powerBall.last.nr,
+            numbers: _this2.checkArrayEmpty(result.powerBall.last.numbers),
+            supplementary: _this2.checkArrayEmpty(result.powerBall.last.powerballs),
+            drawingDate: _this2.niceDate(result.powerBall.last.date)
+          },
+          worldMillions: {
+            nr: result.worldMillions.last.nr,
+            numbers: _this2.checkArrayEmpty(result.worldMillions.last.numbers)[0].toString().split(''),
+            drawingDate: _this2.niceDate(result.worldMillions.last.date)
+          },
+          keno247: {
+            nr: result.keno247.last.nr,
+            numbers: _this2.checkArrayEmpty(result.keno247.last.numbers),
+            drawingDate: _this2.niceDateTime(result.keno247.last.date)
+          },
+          fridayLotto: {
+            nr: result.fridayLotto.last.nr,
+            numbers: _this2.checkArrayEmpty(result.fridayLotto.last.numbers)[0].toString().split(''),
+            drawingDate: _this2.niceDate(result.fridayLotto.last.date)
+          },
+          megaMillions: {
+            nr: result.megaMillions.last.nr,
+            numbers: _this2.checkArrayEmpty(result.megaMillions.last.numbers),
+            supplementary: _this2.checkArrayEmpty(result.megaMillions.last.megaballs),
+            drawingDate: _this2.niceDate(result.megaMillions.last.date)
           }
         });
       });
@@ -29677,235 +31162,194 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 133
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 134
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "text-title-box",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 135
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 136
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "black",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 136
         },
         __self: this
       }, "Check out"), " latest lotto results"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/static/images/smile.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 137
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MonWedLotto__WEBPACK_IMPORTED_MODULE_4__["default"], {
         data: this.state.monWedOz,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 140
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Kenoland__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 141
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "lotto-card kenoland",
+        className: "clear top",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 143
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "img header",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 90
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "head-text",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 91
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "title",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 92
-        },
-        __self: this
-      }, "KENOLAND"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "sub-title",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 95
-        },
-        __self: this
-      }, "Draws every 4 minutes"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "body",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 100
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 101
-        },
-        __self: this
-      }, "Next availble draw: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "icon icon-clock-2 selection-left",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 101
-        },
-        __self: this
-      }), " 03:47"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/images/kenolandball.png",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 102
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "floatLeft",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 103
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 103
-        },
-        __self: this
-      }, "$", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "large",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 103
-        },
-        __self: this
-      }, "10"), " million")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "clear",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 107
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Powerball__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Powerball__WEBPACK_IMPORTED_MODULE_6__["default"], {
         data: this.state.ozPowerBall,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 146
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Tattslotto__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Tattslotto__WEBPACK_IMPORTED_MODULE_7__["default"], {
         data: this.state.saturdayOz,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111
+          lineNumber: 147
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_OzLotto__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_OzLotto__WEBPACK_IMPORTED_MODULE_8__["default"], {
         data: this.state.ozLotto,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 148
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "clear",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 150
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "text-info-banner",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117
+          lineNumber: 153
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/static/images/kenolandball.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118
+          lineNumber: 154
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "textbox",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119
+          lineNumber: 155
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 120
+          lineNumber: 156
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "bold",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121
+          lineNumber: 157
         },
         __self: this
       }, "Over $350,000 in 6 days to 6 lucky winners!"), " KENOLAND keeps that winning feeling rolling!", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "green",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 122
+          lineNumber: 158
         },
         __self: this
       }, "Learn More")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "text-title-box",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 163
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 164
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "black",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 164
         },
         __self: this
-      }, "Check out"), " latest lotto results"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, "Never lose a ticket")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/static/images/smile.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 165
         },
         __self: this
-      }))));
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_USpower__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        data: this.state.powerBall,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 168
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_WorldMillions__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        data: this.state.worldMillions,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 169
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MegaMillions__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        data: this.state.megaMillions,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 170
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Keno247__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        data: this.state.keno247,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 171
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FriLotto__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        data: this.state.fridayLotto,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 172
+        },
+        __self: this
+      })));
     }
   }]);
 

@@ -26,7 +26,7 @@ class MonWedLotto extends Component{
 							
 								<div className="icon icon-arrow-67 selection-left"></div>	
 									<div className="inner-text">
-										<span className="title">Draw</span><br />
+										<span className="title">Draw {this.props.data.nr}</span><br />
 										<span className="title-date">{this.props.data.drawingDate}</span>
 									</div>	
 								<div className="icon icon-arrow-68 selection-right"></div>	
@@ -38,7 +38,7 @@ class MonWedLotto extends Component{
 								<p className="title">Winning numbers</p>
 								<div className="number-circle-container">
 									{this.props.data.numbers.map(function(name, index){
-					                    return <div className="number-circle">{name}</div>;
+					                    return <div key={index} className="number-circle">{name}</div>;
 					                  })}									
 								</div>
 							</div>
@@ -46,7 +46,7 @@ class MonWedLotto extends Component{
 								<p className="title">Supps</p>
 								<div className="number-circle-container">
 									{this.props.data.supplementary.map(function(name, index){
-					                    return <div className="number-circle red">{name}</div>;
+					                    return <div key={index} className="number-circle red">{name}</div>;
 					                  })}	
 								</div>
 							</div>

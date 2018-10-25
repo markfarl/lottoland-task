@@ -8,6 +8,11 @@ $dark-green: #536519;
 $blue: #3074AF;
 $red: #C53422;
 $green: #479E3D;
+$br-red: #FA6A52;
+$br-blue: #51A7E4;
+$lite-blue: #88ADDF;
+$lite-red: #ED1A3B;
+$purple: #E0017C;
 
 /****************/
 /* MEDIA QUERY */
@@ -23,6 +28,7 @@ $c-small: 33.33%;
 $c-large: 66.68%;
 $l-margin: 17px;
 $l-halfwidth: 50%;
+$l-fullwidth: 100%;
 $l-pad: 7px;
 $l-doublepad:  14px;
 
@@ -46,6 +52,12 @@ body{
 .clear{
 	clear:both;
 }
+.clear.top{
+	clear:both;
+	@media screen and (max-width: $break-large) {
+		clear:none;
+	}	
+}
 a:hover{
 	text-decoration:underline;
 	cursor:pointer;
@@ -54,7 +66,10 @@ div.body{
 	position:relative;
 	overflow: hidden;
 }
-
+i{
+	position:relative;
+	top:2px;
+}
 /***********/
 /* HEADER */
 /*********/
@@ -82,6 +97,16 @@ div.body{
 		border-radius: 2px;
 		background: linear-gradient(90deg, #A5CD28 0%, #69A507 100%);
 		box-shadow: 0 4px 7px 0 rgba(1,36,6,0.2);
+	}
+	.promo-text{
+		float: right;
+		margin-top:$l-pad * 3;
+		margin-right:$l-pad * 3;
+		font-family: 'Arial';
+		color: $green-bk;
+		font-size: 18px;
+		font-style: italic;
+		line-height:22px;
 	}
 }
 
@@ -113,7 +138,7 @@ div.body{
 	padding-top:$l-pad;
 	padding-bottom:$l-pad;
 	width: 100%;
-	height:70px;
+	min-height:70px;
 	background-color: rgba(242,244,242,0.7);
 	img{
 		width: auto;
@@ -121,11 +146,16 @@ div.body{
 		margin-right: $l-pad*2;
 	}
 	div.textbox{
-		height: 70px;
+		position:relative;
+		top:-30px;
 		display:inline-block;
 		vertical-align: middle;
+		@media screen and (max-width: $break-large) {
+			display:block;
+			top:0px;
+		}
 		p{
-		    line-height: 10px;
+		    line-height: 16px;
     		margin: 0px;
     		span.bold{
     			font-weight: bold;
@@ -148,6 +178,9 @@ div.body{
 		float: left;
 		width: calc(#{$l-halfwidth} - #{$l-doublepad}*2);
 	}
+	@media screen and (max-width: $break-large) {
+		width: calc(#{$l-fullwidth} - #{$l-margin} - (#{$l-pad});
+	}	
 }
 .lotto-card.kenoland{
 	width: calc(#{$c-small} - #{$l-margin} - (#{$l-pad});
@@ -177,6 +210,29 @@ div.body{
 			margin-top: $l-pad;
 			margin-right: $l-pad;
 		}
+		div.bet-button{
+			margin:auto;
+			margin-top:-20px;
+			height: 49px;
+			width: 159px;
+			border-radius: 2px;
+			background: linear-gradient(90deg, #A5CD28 0%, #69A507 100%);
+			box-shadow: 0 4px 7px 0 rgba(1,36,6,0.2);
+			h1{
+				font-size: 12px;	
+				font-weight: 500;	
+				line-height: 25px;
+				margin:0px;
+			}
+			p{	
+				margin:0px;
+				color:$white;
+				font-size: 14px;
+				font-weight: 900;
+				line-height: 18px;
+				padding-top:0px;
+			}
+		}
 		div.floatLeft{
 			height:70px;
 			display:inline-block;
@@ -190,7 +246,14 @@ div.body{
 				}
 			}
 		}
-	}											
+	}	
+	@media screen and (max-width: $break-large) {
+		//float: right;
+		width: calc(#{$l-halfwidth} - #{$l-margin} - (#{$l-pad});
+	}
+	@media screen and (max-width: $break-med) {
+		width: calc(#{$l-fullwidth} - #{$l-margin} - (#{$l-pad});
+	}									
 }
 
 .lotto-card{
@@ -216,15 +279,21 @@ div.body{
 		color:$white;
 		background-size: 100%;
 		div.head-text{
-			margin:0px;
+			margin:0px;			
 			padding: $l-doublepad;
 			p{
 				margin:0px;
+			}
+			img{
+				float: right;
+				max-height:80px;
+				width:auto;
 			}
 		}
 		p.title{
 			color: $white;
 			font-size: $title-size;
+			text-transform: uppercase;
 			font-weight: 900;
 			line-height: 30px;
 			text-shadow: 0 0 21px 0 #000000;
@@ -233,6 +302,17 @@ div.body{
 			font-size: 14px;
 			font-weight: 500;
 			line-height: 16px;
+		}
+		p.sub-top-title{
+			text-transform: uppercase;
+			font-size: 21px;
+			font-weight: 900;
+			line-height: 22px;
+		}
+		p.sub-time-title{
+			font-size: 12px;
+			font-weight: 300;
+			line-height: 22px;
 		}
 		div.rectangle{
 			position: absolute;
@@ -311,15 +391,21 @@ div.body{
 	}
 
 
-	@media screen and (max-width: $break-small) {
-	// width: 100px;
-	//  float: none;
+
+	@media screen and (max-width: $break-large) {
+		//float: right;
+		width: calc(#{$l-halfwidth} - #{$l-margin} - (#{$l-pad}*2);
 	}
-	@media screen and (min-width: $break-large) {
-	//  float: right;
+
+	@media screen and (max-width: $break-med) {
+		width: calc(#{$l-fullwidth} - #{$l-margin} - (#{$l-pad});
 	}
 
 }
+
+/**************************/
+/* LOTTO CARD ITEMS */
+/************************/
 
 .mon-wed-lotto{
 	.img{
@@ -364,5 +450,56 @@ div.body{
 		div.number-circle.red{
 			border: 1px solid $green;
 		}
+	}
+}
+.us-power{
+	.img{
+		background: linear-gradient(90deg, #FA6A52 0%, #E92A2A 100%);	
+ 	}
+ 	div.borderLeft{
+		background-color: $br-red;
+	}
+	div.lotto-numbers{
+		div.number-circle.red{
+			border: 1px solid $br-red;
+		}
+	}
+}
+.world-millions{
+	.img{
+		background: linear-gradient(90deg, #51A7E4 0%, #1A4088 100%);
+ 	}
+ 	div.borderLeft{
+		background-color: $br-blue;
+	}
+}
+.mega-millions{
+	.img{
+			background: linear-gradient(90deg, #88ADDF 0%, #3957C8 100%);
+ 	}
+ 	div.borderLeft{
+		background-color: $lite-blue;
+	}
+
+	div.lotto-numbers{
+		div.number-circle.red{
+			border: 1px solid $lite-blue;
+		}
+	}
+}
+.keno-247{
+	.img{
+		background: linear-gradient(92.59deg, #ED1A3B 0%, rgba(198,22,139,0.5) 100%);
+ 	}
+ 	div.borderLeft{
+		background-color: $lite-red;
+	}
+}
+.fri-lotto{
+	.img{
+		background: linear-gradient(90deg, #E0017C 0%, #95248C 100%, rgba(144,38,141,0.5) 100%);
+ 	}
+ 	div.borderLeft{
+		background-color: $purple;
 	}
 }

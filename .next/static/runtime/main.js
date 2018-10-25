@@ -5706,7 +5706,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "D:\\PROJECTS-SYNC\\lottoland-task\\.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\PROJECT SYNC\\Lottoland\\lottoland-task\\.next");
       return error;
     }
   };
@@ -17966,7 +17966,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\PROJECTS-SYNC\lottoland-task\node_modules\next\dist\client\next-dev */"./node_modules/next/dist/client/next-dev.js");
+module.exports = __webpack_require__(/*! C:\PROJECT SYNC\Lottoland\lottoland-task\node_modules\next\dist\client\next-dev */"./node_modules/next/dist/client/next-dev.js");
 
 
 /***/ }),

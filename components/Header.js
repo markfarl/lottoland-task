@@ -9,6 +9,9 @@ class Header extends Component{
 				<div className="join-button">
 					JOIN
 				</div>
+				<div className="promo-text">
+					Home of lotto betting
+				</div>
 			</div>
 			)
 	}
