@@ -18,7 +18,7 @@ class MonWedLotto extends Component{
 								Mon &amp; Wed lotto<br />								
 								</p>
 								<p className="sub-title">
-									Monday and Wednesday Lotto {this.props.data.numbers}
+									Monday and Wednesday Lotto
 								</p>								
 							</div>
 							
