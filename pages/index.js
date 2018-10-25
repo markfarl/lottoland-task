@@ -65,6 +65,13 @@ class Home extends Component{
 			return []
 		}
 	}
+	checkArrayEmptytoString(array){
+		if(array){
+			return array[0].toString().split('')
+		}else{
+			return []
+		}
+	}
   	getDrawingApi(){
 	    $.when($.ajax({
  			url: "https://www.lottoland.com/api/drawings",
@@ -105,7 +112,7 @@ class Home extends Component{
 		      	},
 	      	worldMillions: {
 	      		nr: result.worldMillions.last.nr,
-		      	numbers: this.checkArrayEmpty(result.worldMillions.last.numbers)[0].toString().split(''),
+		      	numbers: this.checkArrayEmptytoString(result.worldMillions.last.numbers),
 		      	drawingDate: this.niceDate(result.worldMillions.last.date)
 		      	},
 	      	keno247: {
@@ -115,7 +122,7 @@ class Home extends Component{
 		      	},
 	      	fridayLotto: {
 	      		nr: result.fridayLotto.last.nr,
-		      	numbers: this.checkArrayEmpty(result.fridayLotto.last.numbers)[0].toString().split(''),
+		      	numbers: this.checkArrayEmptytoString(result.fridayLotto.last.numbers),
 		      	drawingDate: this.niceDate(result.fridayLotto.last.date)
 		      	},
 	      	megaMillions: {
@@ -166,7 +173,10 @@ class Home extends Component{
 					</div>
 
 					<USpower data={this.state.powerBall} />
+
 					<WorldMillions data={this.state.worldMillions} />
+					<div className="clear top">
+					</div>
 					<MegaMillions data={this.state.megaMillions} />
 					<Keno247 data={this.state.keno247} />
 					<FriLotto data={this.state.fridayLotto} />
